@@ -1,7 +1,7 @@
 let express = require('express');
 let path = require('path');
 let fs = require('fs');
-let MongoClient = require('mongodb').MongoClient;
+let MongoClient = require('mongodb').MongoClient; //MONGO client 
 let bodyParser = require('body-parser');
 let app = express();
 
