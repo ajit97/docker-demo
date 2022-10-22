@@ -5,9 +5,13 @@ let MongoClient = require('mongodb').MongoClient; //MONGO client
 let bodyParser = require('body-parser');
 let app = express();
 
+
+//This is for Content-Type=x-www-form-encoded
 app.use(bodyParser.urlencoded({
   extended: true
 }));
+
+//This is for Content-Type=application/json
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
