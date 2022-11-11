@@ -14,6 +14,8 @@ app.use(bodyParser.urlencoded({
 //This is for Content-Type=application/json
 app.use(bodyParser.json());
 
+
+
 app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
   });
